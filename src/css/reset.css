@@ -18,7 +18,11 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+ol {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0px;
+}
 a {
   color: currentColor;
   text-decoration: none;

@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--primary-text-color);
+
+  margin-left: auto;
+}
+
+.menu {
+  margin-left: auto;
+  background: none;
+  border: none;
+
+  fill: var(--primary-text-color);
+
+  cursor: pointer;
+}
+
+.list-guesses {
+  display: flex;
+}
+
+.list-guesses .item-guesses {
+  margin-right: 14px;
+}
+
+.item-guesses h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.input {
+  margin-top: 12px;
+  margin-bottom: 38px;
+
+  width: 100%;
+  height: 36px;
+  max-width: 402px;
+
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+
+  background-color: var(--bgc);
+  color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+}
+
+.input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.container.main {
+  background-color: var(--section-bgc);
+  border-radius: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.container-rules {
+  background-color: var(--bgc);
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+
+  padding: 20px 20px 18px 20px;
+}
+
+.question {
+  border: none;
+  background: none;
+
+  fill: var(--primary-text-color);
+}
+
+.tittle-rules {
+  display: flex;
+  justify-content: center;
+}
+
+.how-to-play {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-bottom: 7px;
+}
+
+.list-rules {
+  width: 100px;
+  /* max-width: 100px; */
+}
+
+.item-rules {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

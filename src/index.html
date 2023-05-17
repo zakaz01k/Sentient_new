@@ -2,26 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Sentient</title>
   </head>
   <body>
     <load src="partials/header.html" />
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load src="partials/vite-promo.html" />
-
-    <script type="module" src="/main.js"></script>
-    <!-- так підключаємо файли, які на одному рівні зі сторінкою, в даному випадку файл імпортів -->
+    <main>
+      <section>
+        <div class="container main">
+          <ul class="list-guesses">
+            <li class="item-guesses"><h2>Attempts: 0</h2></li>
+            <li class="item-guesses"><h2>Time: 0:00</h2></li>
+          </ul>
+          <input class="input" type="text" placeholder="Your guess..." />
+          <div class="container-rules">
+            <div class="tittle-rules">
+              <h2 class="how-to-play">How to play</h2>
+              <button type="button" class="question">
+                <svg width="24" height="24">
+                  <use href="./img/sprite.svg#question"></use>
+                </svg>
+              </button>
+            </div>
+            <ol class="list-rules">
+              <li class="item-rules">
+                The website will generate a random word that the player needs to
+                guess.
+              </li>
+              <li class="item-rules">
+                The player can input their guess into a form provided on the
+                website.
+              </li>
+              <li class="item-rules">
+                After submitting a guess, the website will display how close the
+                guess is to the correct word. This can be done by indicating the
+                number of matching letters or providing a similarity score.
+              </li>
+              <li class="item-rules">
+                The player's objective is to guess the word correctly in the
+                fewest number of attempts and as quickly as possible.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <script type="module" src="/main.js"></script>
+    так підключаємо файли, які на одному рівні зі сторінкою, в даному випадку файл імпортів
     <script type="module" src="./scripts/modal-oneBtn.js"></script>
-    <!-- точкове підключення скриптів, без проміжного імпорту -->
+    точкове підключення скриптів, без проміжного імпорту -->
   </body>
 </html>
