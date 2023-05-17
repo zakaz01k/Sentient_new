@@ -23,7 +23,7 @@
   line-height: 36px;
   color: var(--primary-text-color);
 
-  margin-left: auto;
+  margin-left: 148px;
 }
 
 .menu {
@@ -73,6 +73,8 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 14px;
+
+  outline: none;
 }
 
 .input::placeholder {
@@ -90,11 +92,15 @@
   padding-bottom: 24px;
 }
 
-.container-rules {
+.containerRules {
   background-color: var(--bgc);
   border: 2px solid #ffffff;
   border-radius: 8px;
 
+  width: 100%;
+  max-width: 402px;
+
+  height: 100%;
   padding: 20px 20px 18px 20px;
 }
 
@@ -120,8 +126,10 @@
 }
 
 .list-rules {
-  width: 100px;
-  /* max-width: 100px; */
+  width: 100%;
+  max-width: 362px;
+
+  padding-left: 20px;
 }
 
 .item-rules {
