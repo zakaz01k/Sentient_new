@@ -41,3 +41,61 @@
 .menu:focus {
   background-color: var(--section-bgc);
 }
+
+.dropdown-menu {
+  position: absolute;
+
+  padding: 12px;
+  top: 100%;
+  right: 24px;
+
+  width: 150px;
+  height: 294px;
+
+  background-color: var(--section-bgc);
+
+  z-index: 999;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  display: none;
+}
+
+.list-menu .item-menu {
+  width: 128px;
+  height: 34px;
+  background-color: var(--section-bgc);
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-menu .item-menu:hover,
+.list-menu .item-menu:focus {
+  background: #333541;
+}
+
+.dropdown-menu .link-menu {
+  display: block;
+  color: var(--primary-text-color);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.item-menu:hover,
+.item-menu:focus {
+  background-color: var(--section-bgc);
+}
+
+.dropdown-menu.show {
+  display: block;
+}

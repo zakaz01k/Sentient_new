@@ -1,21 +1,16 @@
-// Отримуємо посилання на кнопку меню та випадаюче меню
-var menuButton = document.querySelector('.menu');
-var dropdownMenu = document.querySelector('.dropdown-menu');
+const menuButton = document.querySelector('.menu');
+const dropdownMenu = document.querySelector('.dropdown-menu');
 
-// Додаємо подію кліку на кнопку меню
-menuButton.addEventListener('click', function (event) {
-  event.stopPropagation(); // Зупиняємо подальше поширення події кліку
-  dropdownMenu.style.display =
-    dropdownMenu.style.display === 'none' ? 'block' : 'none';
+menuButton.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('show');
 });
 
-// Додаємо подію кліку до всього документу
-document.addEventListener('click', function (event) {
-  // Перевіряємо, чи клікнуто не на меню або його елементи
+document.addEventListener('click', event => {
+  const targetElement = event.target;
   if (
-    !dropdownMenu.contains(event.target) &&
-    dropdownMenu.style.display === 'block'
+    !targetElement.closest('.dropdown-menu') &&
+    !targetElement.closest('.menu')
   ) {
-    dropdownMenu.style.display = 'none'; // Закриваємо меню
+    dropdownMenu.classList.remove('show');
   }
 });
