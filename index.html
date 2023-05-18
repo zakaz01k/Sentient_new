@@ -20,16 +20,18 @@
     />
     
     <title>Sentient</title>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-ea41eb63.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-29d4cd15.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-1f3f0f30.css">
   </head>
   <body>
     <header>
   <div class="container header">
     <nav class="nav">
       <a class="logo" href="./index.html">Sentient</a>
+
       <button class="menu" type="menu">
-        <svg width="32" height="32">
-          <use href="/vanilla-app-template/assets/sprite-ea53a921.svg#menu"></use>
+        <svg class="menu-icon" width="28" height="28">
+          <use href="/vanilla-app-template/assets/sprite-fbeb3db7.svg#menu"></use>
         </svg>
       </button>
     </nav>
@@ -43,15 +45,15 @@
             <li class="item-guesses"><h2>Attempts: 0</h2></li>
             <li class="item-guesses"><h2>Time: 0:00</h2></li>
           </ul>
-          <input class="input" type="text" placeholder="Your guess..." />
+          <input class="input" type="text" placeholder="Enter your guess..." />
           <div class="containerRules">
             <div class="tittle-rules">
               <h2 class="how-to-play">How to play</h2>
-              <button type="button" class="question">
+              <a href="" class="question">
                 <svg width="24" height="24">
-                  <use href="/vanilla-app-template/assets/sprite-ea53a921.svg#question"></use>
+                  <use href="/vanilla-app-template/assets/sprite-fbeb3db7.svg#question"></use>
                 </svg>
-              </button>
+              </a>
             </div>
             <ol class="list-rules">
               <li class="item-rules">
@@ -76,6 +78,8 @@
         </div>
       </section>
     </main>
+
+    
     <!-- <script type="module" src="/main.js"></script>
     так підключаємо файли, які на одному рівні зі сторінкою, в даному випадку файл імпортів
     <script type="module" src="./scripts/modal-oneBtn.js"></script>
