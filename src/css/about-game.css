@@ -1,0 +1,105 @@
+.slider {
+  width: 402px;
+  height: 452px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slides {
+  width: calc(100% * 5);
+  height: 100%;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  width: 402px;
+  height: 452px;
+  flex-shrink: 0;
+
+  position: relative;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #333541;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-tittle {
+  text-align: center;
+
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  margin-bottom: 22px;
+}
+
+.controls {
+  display: flex;
+}
+
+.prev-arrow {
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  bottom: 12px;
+  left: 12px;
+
+  cursor: pointer;
+
+  z-index: 99;
+}
+.next-arrow {
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  bottom: 12px;
+  right: 12px;
+
+  cursor: pointer;
+
+  z-index: 99;
+}
+
+.arrows {
+  fill: var(--primary-text-color);
+}
+
+.prev-arrow svg,
+.next-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.prev-arrow.disabled,
+.next-arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

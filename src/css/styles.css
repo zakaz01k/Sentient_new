@@ -6,7 +6,9 @@
 */
 @import url('./reset.css');
 @import url('./index.css');
+@import url('./history.css');
 @import url('./header.css');
+@import url('./about-game.css');
 
 :root {
   font-family: 'Poppins', sans-serif;

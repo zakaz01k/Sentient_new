@@ -1,0 +1,66 @@
+.container-history.main {
+  height: 500px;
+  width: 100%;
+  max-width: 450px;
+
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  background-color: var(--section-bgc);
+  border-radius: 8px;
+}
+
+.tittle-history {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 372px;
+  height: 36px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: var(--bgc);
+
+  border-radius: 10px;
+
+  margin-bottom: 6px;
+}
+.history:hover,
+.history:focus {
+  outline: 2px solid #ffffff;
+}
+.main-history-list:last-child {
+  margin-bottom: 0;
+}
+
+.history-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.history-item {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 6px;
+  user-select: none;
+}
+
+.history-item-wrapper:last-child {
+  margin-left: auto;
+}

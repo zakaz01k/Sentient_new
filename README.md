@@ -27,4 +27,7 @@ results and strive for better scores.
 
 So, dive into the word-guessing adventure and show off your linguistic prowess.
 Whether you're a wordsmith or looking to expand your vocabulary, this game
-offers fun and excitement for everyone. Let the guessing begin!
+offers fun and excitement for everyone. Let the guessing begin!So, dive into the
+word-guessing adventure and show off your linguistic prowess. Whether you're a
+wordsmith or looking to expand your vocabulary, this game offers fun and
+excitement for everyone. Let the guessing begin!
