@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <title>Sentient</title>
+    <script type="module" crossorigin src="/vanilla-app-template/assets/menu-5bc7d9db.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-4521c17b.css">
+  </head>
+  <body>
+    <header>
+  <div class="container header">
+    <nav class="nav">
+      <div class="button-logo">
+        <a class="logo" href="../index.html">Sentient</a>
+      </div>
+
+      <button class="menu" type="menu">
+        <svg class="menu-icon" width="28" height="28">
+          <use href="/vanilla-app-template/assets/sprite-08ae191f.svg#menu"></use>
+        </svg>
+      </button>
+      <div class="dropdown-menu">
+  <ul class="list-menu">
+    <li class="item-menu">
+      <a class="link-menu" href="../about-game.html">About game</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="#">Rating</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="../history.html">History</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="../support-game.html">Support game</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="#">Tip</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="#">Feedback</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="#">Give up</a>
+    </li>
+    <li class="item-menu">
+      <a class="link-menu" href="#">Settings</a>
+    </li>
+  </ul>
+</div>
+
+    </nav>
+  </div>
+</header>
+
+<script src="../main.js"></script>
+
+    <main>
+      <section>
+        <div class="container main">
+          <div class="support-container">
+            <h1 class="tittle-support">Support Game Development</h1>
+            <p class="text-support">
+              Hello, all gamers! My name is pose8don, I am a student and I have
+              created this exciting game for you. I would like to offer you an
+              opportunity to support the development of the game and help make
+              it even better. Your support will enable me to continue developing
+              the game and providing it for free, without ads.
+            </p>
+            <p class="text-support">
+              My game is based on a simple yet captivating word-guessing
+              concept. The objective of the game is to guess the hidden word
+              with the fewest attempts and in the shortest time possible. I
+              strive to make the game more interesting and diverse by adding new
+              features and enhancements.
+            </p>
+            <p class="text-support">
+              Your support means a lot to me. All donations you make will be
+              directed towards the development and improvement of the game. Your
+              contributions will enable me to work on the game, add new levels,
+              features, and ensure the best gaming experience for you.
+            </p>
+            <p class="text-support">
+              You can support the game by making a donation through the
+              following crypto wallets:
+              <span class="text-support-span">Ethereum</span> and
+              <span class="text-support-span">Bitcoin</span>. Additionally, you
+              can use other payment systems such as
+              <span class="text-support-span">PayPal</span>. For information on
+              each donation method, please click on the links below.
+            </p>
+            <!-- ... -->
+
+            <button class="btn-support" type="button" id="openModal">
+              Support The Game
+            </button>
+
+            <!-- ... -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <svg class="close" width="24" height="24">
+          <use href="/vanilla-app-template/assets/sprite-08ae191f.svg#close"></use>
+        </svg>
+        <h1 class="tittle-support">Details</h1>
+        <p class="text-support">
+          PayPal:
+          <span class="text-support-span">denissuper59@gmail.com</span>
+        </p>
+
+        <p class="text-support">
+          Ethereum (network: Eth Main):
+          <span class="text-support-span"
+            >0xC24B2Fc84DFe69fC9eF3c2B65b7994875649f6e2</span
+          >
+          <img src="/vanilla-app-template/assets/eth-1f3cef33.jpg" alt="Ethereum wallet" width="100" />
+        </p>
+        <p class="text-support">
+          Bitcoin (network: Bitcoin):
+          <span class="text-support-span"
+            >16Zw4cipbf3Z9K4D5DFz8XHPurX6FqgxCW</span
+          >
+          <img src="/vanilla-app-template/assets/btc-8d098e26.jpg" alt="Bitcoin wallet" width="100" />
+        </p>
+      </div>
+    </div>
+    
+    <script src="./scripts/support.js"></script>
+  </body>
+</html>
