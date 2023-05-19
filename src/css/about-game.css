@@ -15,7 +15,7 @@
   width: calc(100% * 5);
   height: 100%;
   display: flex;
-  transition: transform 0.3s ease-in-out;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide {
@@ -33,6 +33,8 @@
   border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 20px;
+
+  position: relative;
 }
 
 .card-tittle {
@@ -45,6 +47,35 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+}
+.card-tittle-slider4 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  position: absolute;
+
+  bottom: 10px;
+  right: 44px;
+
+  user-select: none;
+}
+
+.card-tittle-slider5 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  position: absolute;
+
+  bottom: 10px;
+  left: 44px;
+
+  user-select: none;
 }
 
 .card-text {
@@ -74,6 +105,10 @@
 
   z-index: 99;
 }
+
+.arrows:hover {
+  fill: var(--placeholder);
+}
 .next-arrow {
   position: absolute;
 
@@ -90,6 +125,7 @@
 
 .arrows {
   fill: var(--primary-text-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prev-arrow svg,
