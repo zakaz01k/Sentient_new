@@ -91,11 +91,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  height: 350px;
+  height: 100%;
+  max-height: 420px;
   background-color: var(--section-bgc);
   border-radius: 8px;
   padding: 20px;
   text-align: center;
+
+  text-align: center;
+
+  padding: 20px;
 
   overflow: auto;
 }
@@ -104,11 +109,12 @@
   position: absolute;
   top: 10px;
   right: 10px;
+
   width: 24px;
   height: 24px;
   cursor: pointer;
 
-  fill: var(--bgc);
+  fill: white;
 
   z-index: 9999;
 }

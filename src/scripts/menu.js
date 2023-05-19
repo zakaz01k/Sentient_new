@@ -14,3 +14,24 @@ document.addEventListener('click', event => {
     dropdownMenu.classList.remove('show');
   }
 });
+
+(() => {
+  const refs = {
+    openModalLeaveReviewBtn: document.querySelector('[feedback-open]'),
+    closeModalLeaveReviewBtn: document.querySelector('[feedback-close]'),
+    modalLeaveReview: document.querySelector('[data-modal-feedback]'),
+  };
+
+  if (refs.openModalLeaveReviewBtn) {
+    refs.openModalLeaveReviewBtn.addEventListener('click', toggleModal);
+  }
+  if (refs.closeModalLeaveReviewBtn) {
+    refs.closeModalLeaveReviewBtn.addEventListener('click', toggleModal);
+  }
+
+  function toggleModal() {
+    if (refs.modalLeaveReview) {
+      refs.modalLeaveReview.classList.toggle('is_hidden');
+    }
+  }
+})();

@@ -101,6 +101,8 @@
   height: 34px;
   background-color: var(--section-bgc);
   border-radius: 4px;
+
+  text-align: center;
 }
 
 .list-menu .item-menu:hover,
@@ -115,12 +117,29 @@
   padding-top: 5px;
   padding-bottom: 5px;
 
-  text-align: center;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+
+.link-menu-btn {
+  display: inline-block;
+  color: var(--primary-text-color);
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  border: none;
+
+  background: none;
 }
 
 .item-menu:hover,
