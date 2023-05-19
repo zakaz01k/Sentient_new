@@ -19,9 +19,9 @@
       referrerpolicy="no-referrer"
     />
     
-    <title>Sentient</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/menu-5bc7d9db.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-4521c17b.css">
+    <title>History</title>
+    <script type="module" crossorigin src="/vanilla-app-template/assets/menu-55e2c08d.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-96dff25f.css">
   </head>
   <body>
     <header>
@@ -33,7 +33,7 @@
 
       <button class="menu" type="menu">
         <svg class="menu-icon" width="28" height="28">
-          <use href="/vanilla-app-template/assets/sprite-08ae191f.svg#menu"></use>
+          <use href="/vanilla-app-template/assets/sprite-3fb91c93.svg#menu"></use>
         </svg>
       </button>
       <div class="dropdown-menu">
@@ -54,7 +54,10 @@
       <a class="link-menu" href="#">Tip</a>
     </li>
     <li class="item-menu">
-      <a class="link-menu" href="#">Feedback</a>
+      <button type="button" class="link-menu-btn" feedback-open>
+        Feedback
+      </button>
+      <!-- <a class="link-menu" href="#"></a> -->
     </li>
     <li class="item-menu">
       <a class="link-menu" href="#">Give up</a>
@@ -63,6 +66,22 @@
       <a class="link-menu" href="#">Settings</a>
     </li>
   </ul>
+</div>
+
+      <div class="backdrop is_hidden" data-modal-feedback>
+  <form class="form">
+    <div class="title">Your feedback</div>
+    <input type="text" placeholder="Your email" class="input" />
+    <textarea placeholder="Your message" class="textarea"></textarea>
+
+    <button type="submit" class="submit">Submit</button>
+
+    <button type="button" feedback-close class="btn-close">
+      <svg width="18" height="18">
+        <use href="../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </form>
 </div>
 
     </nav>
