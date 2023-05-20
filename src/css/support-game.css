@@ -10,6 +10,25 @@
   text-align: center;
 }
 
+/* Добавляем стилизацию скролл-полосы */
+.support-container::-webkit-scrollbar {
+  width: 4px;
+  background-color: none; /* Прозрачный фон */
+}
+
+.support-container::-webkit-scrollbar-track {
+  background-color: none; /* Прозрачный фон */
+}
+
+.support-container::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  border-radius: 3px;
+}
+
+.support-container::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
 .tittle-support {
   font-family: 'Poppins';
   font-style: normal;

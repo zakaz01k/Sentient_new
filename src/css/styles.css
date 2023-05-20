@@ -11,6 +11,7 @@
 @import url('./about-game.css');
 @import url('./support-game.css');
 @import url('./feedback.css');
+@import url('./give-up.css');
 
 :root {
   font-family: 'Poppins', sans-serif;

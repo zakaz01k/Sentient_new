@@ -1,6 +1,6 @@
 const btnSupport = document.getElementById('openModal');
 const modal = document.getElementById('modal');
-const closeBtn = modal.querySelector('.close');
+const closeBtn = modal.querySelector('.btn-close');
 
 // Функция для открытия модального окна
 function openModal() {
