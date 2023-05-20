@@ -20,9 +20,9 @@
     />
     
     <title>About game</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/about-game-30dd10e3.js"></script>
-    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/menu-55e2c08d.js">
-    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-96dff25f.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/about-game-25d5ed84.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/menu-2c7e78d8.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-85e1ed34.css">
   </head>
   <body>
     <header>
@@ -58,10 +58,9 @@
       <button type="button" class="link-menu-btn" feedback-open>
         Feedback
       </button>
-      <!-- <a class="link-menu" href="#"></a> -->
     </li>
     <li class="item-menu">
-      <a class="link-menu" href="#">Give up</a>
+      <button type="button" class="link-menu-btn" give-up-open>Give up</button>
     </li>
     <li class="item-menu">
       <a class="link-menu" href="#">Settings</a>
@@ -72,7 +71,7 @@
       <div class="backdrop is_hidden" data-modal-feedback>
   <form class="form">
     <div class="title">Your feedback</div>
-    <input type="text" placeholder="Your email" class="input" />
+    <input type="email" placeholder="Your email" class="input" />
     <textarea placeholder="Your message" class="textarea"></textarea>
 
     <button type="submit" class="submit">Submit</button>

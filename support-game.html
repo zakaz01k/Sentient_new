@@ -20,8 +20,8 @@
     />
     
     <title>Support game</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/menu-55e2c08d.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-96dff25f.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/menu-2c7e78d8.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/menu-85e1ed34.css">
   </head>
   <body>
     <header>
@@ -57,10 +57,9 @@
       <button type="button" class="link-menu-btn" feedback-open>
         Feedback
       </button>
-      <!-- <a class="link-menu" href="#"></a> -->
     </li>
     <li class="item-menu">
-      <a class="link-menu" href="#">Give up</a>
+      <button type="button" class="link-menu-btn" give-up-open>Give up</button>
     </li>
     <li class="item-menu">
       <a class="link-menu" href="#">Settings</a>
@@ -71,7 +70,7 @@
       <div class="backdrop is_hidden" data-modal-feedback>
   <form class="form">
     <div class="title">Your feedback</div>
-    <input type="text" placeholder="Your email" class="input" />
+    <input type="email" placeholder="Your email" class="input" />
     <textarea placeholder="Your message" class="textarea"></textarea>
 
     <button type="submit" class="submit">Submit</button>
@@ -137,32 +136,33 @@
     </main>
     <!-- Модальное окно -->
     <div id="modal" class="modal">
-      <div class="modal-content">
-        <svg class="close" width="24" height="24">
-          <use href="./src/img/sprite.svg#close"></use>
-        </svg>
-        <h1 class="tittle-support">Details</h1>
-        <p class="text-support">
-          PayPal:
-          <span class="text-support-span">denissuper59@gmail.com</span>
-        </p>
+  <div class="modal-content">
+    <svg width="18" height="18" class="btn-close">
+      <use href="../img/sprite.svg#close"></use>
+    </svg>
+    <h1 class="tittle-support">Details</h1>
+    <p class="text-support">
+      PayPal:
+      <span class="text-support-span">denissuper59@gmail.com</span>
+    </p>
 
-        <p class="text-support">
-          Ethereum (network: Eth Main):
-          <span class="text-support-span"
-            >0xC24B2Fc84DFe69fC9eF3c2B65b7994875649f6e2</span
-          >
-          <img src="/vanilla-app-template/assets/eth-1f3cef33.jpg" alt="Ethereum wallet" width="100" />
-        </p>
-        <p class="text-support">
-          Bitcoin (network: Bitcoin):
-          <span class="text-support-span"
-            >16Zw4cipbf3Z9K4D5DFz8XHPurX6FqgxCW</span
-          >
-          <img src="/vanilla-app-template/assets/btc-8d098e26.jpg" alt="Bitcoin wallet" width="100" />
-        </p>
-      </div>
-    </div>
+    <p class="text-support">
+      Ethereum (network: Eth Main):
+      <span class="text-support-span"
+        >0xC24B2Fc84DFe69fC9eF3c2B65b7994875649f6e2</span
+      >
+      <img src="/vanilla-app-template/assets/eth-1f3cef33.jpg" alt="Ethereum wallet" width="100" />
+    </p>
+    <p class="text-support">
+      Bitcoin (network: Bitcoin):
+      <span class="text-support-span">16Zw4cipbf3Z9K4D5DFz8XHPurX6FqgxCW</span>
+      <img src="/vanilla-app-template/assets/btc-8d098e26.jpg" alt="Bitcoin wallet" width="100" />
+    </p>
+  </div>
+</div>
+<script src="./scripts/support.js"></script>
+
+
     
     <script src="./scripts/support.js"></script>
   </body>
