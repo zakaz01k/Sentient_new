@@ -2,20 +2,32 @@
   "name": "vanilla-app-template",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/vanilla-app-template/",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.0.0",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "vite": "^4.0.0"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.5.0",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
-  }
+  },
+  "description": "Welcome to my exciting word-guessing game! Get ready to put your vocabulary\r skills to the test and have a great time challenging yourself. Here's how the\r game works:",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakaz01k/Sentient_new.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zakaz01k/Sentient_new/issues"
+  },
+  "homepage": "https://github.com/zakaz01k/Sentient_new#readme"
 }
